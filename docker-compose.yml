@@ -1,0 +1,13 @@
+services:
+  h5web:
+    build: ./h5web_app
+    ports:
+      - '3000:3000'
+  h5grove:
+    build: ./h5grove_app
+    ports:
+      - '8888:8888'
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data
