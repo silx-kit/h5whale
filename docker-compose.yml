@@ -4,8 +4,9 @@ services:
       context: ./h5web_app
       args:
         - H5GROVE_APP_PORT=${H5GROVE_APP_PORT}
+        - H5WEB_APP_PORT=${H5WEB_APP_PORT}
     ports:
-      - '3000:3000'
+      - '${H5WEB_APP_PORT}:${H5WEB_APP_PORT}'
   h5grove:
     build:
       context: ./h5grove_app
