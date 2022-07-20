@@ -3,6 +3,8 @@ import { App, H5GroveProvider } from '@h5web/app';
 function MyApp() {
   const query = new URLSearchParams(window.location.search);
   const file = query.get('file');
+  const url = import.meta.env.VITE_H5GROVE_URL as string;
+  const port = import.meta.env.VITE_H5GROVE_PORT as string;
 
   if (!file) {
     return (
@@ -16,7 +18,8 @@ function MyApp() {
 
   return (
     <H5GroveProvider
-      url="http://localhost:8888/"
+      //@ts-ignore
+      url={`${url}:${port}`}
       filepath={file}
       axiosConfig={{ params: { file } }}
     >
