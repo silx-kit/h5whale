@@ -1,6 +1,7 @@
 {
   "name": "h5webapp-vite",
   "version": "1.0.0",
+  "private": true,
   "description": "Example of using @h5web/app with Vite.",
   "keywords": [
     "hdf5",

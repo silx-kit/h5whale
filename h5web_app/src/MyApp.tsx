@@ -18,8 +18,7 @@ function MyApp() {
 
   return (
     <H5GroveProvider
-      //@ts-ignore
-      url={`${url}:${port}`}
+      url={port ? `${url}:${port}` : url}
       filepath={file}
       axiosConfig={{ params: { file } }}
     >
