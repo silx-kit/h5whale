@@ -4,7 +4,7 @@ FROM python:slim-bullseye
 ENV PYTHONUNBUFFERED=1
 
 WORKDIR /h5grove_app
-RUN pip install h5grove[flask]
+RUN pip install h5grove[flask]==2.2.0
 RUN pip install gunicorn
 
 COPY main.py .
