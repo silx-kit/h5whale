@@ -1,4 +1,4 @@
-FROM node:20-slim AS base
+FROM node:22-slim AS base
 
 ARG H5WEB_APP_PORT=3000
 ARG H5GROVE_APP_URL=http://localhost
