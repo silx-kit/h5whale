@@ -3,7 +3,7 @@
 ## Quick start 🚀
 
 - Copy the files in `data`
-- Run `docker-compose up`
+- Run `docker compose up`
 - Access the viewer at `http://localhost:3000/?file=<name_of_your_file>`
 
 ## Repository contents 📦
@@ -13,10 +13,10 @@ h5whale provides Docker images to run a fullstack application to view HDF5 files
 - A Python back-end app based on [h5grove](https://github.com/silx-kit/h5grove) to serve HDF5 files contained in the `data` folder through the network.
 - A React front-end app based on [h5web](https://github.com/silx-kit/h5web) to display and inspect HDF5 files served by the back-end app.
 
-Each app has its own Dockerfile and the fullstack app can be run with `docker-compose`:
+Each app has its own Dockerfile and the fullstack app can be run with `docker compose`:
 
 ```
-docker-compose up
+docker compose up
 ```
 
 The viewer can be accessed at `http://localhost:3000`, the file being specified by the query param `file`. Ex: `nexus.nx` can be viewed by accessing `http://localhost:3000/?file=nexus.nx`.
