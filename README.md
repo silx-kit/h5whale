@@ -2,6 +2,7 @@
 
 ## Quick start 🚀
 
+- Clone the repository
 - Copy the files in `data`
 - Run `docker compose up`
 - Access the viewer at `http://localhost:3000/?file=<name_of_your_file>`
