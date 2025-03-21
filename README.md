@@ -1,13 +1,13 @@
-# h5whale: a Docker application to explore HDF5 files 🐳
+# 🐳 h5whale − Docker app to explore HDF5 files
 
-## Quick start 🚀
+## 🚀 Quick start
 
 - Clone the repository
 - Copy the files in `data`
 - Run `docker compose up`
 - Access the viewer at `http://localhost:3000/?file=<name_of_your_file>`
 
-## Repository contents 📦
+## 📦 Repository contents
 
 h5whale provides Docker images to run a fullstack application to view HDF5 files in a web browser. The fullstack app is composed of two apps:
 
@@ -24,7 +24,7 @@ The viewer can be accessed at `http://localhost:3000`, the file being specified 
 
 The value of the front-end app port (default: `3000`) and of the back-end app port (default: `8888`) can be changed in the `.env` file.
 
-## Docker images 🐋🖼️
+## 🖼️ Docker images 
 
 ### Back-end (h5grove_app)
 
