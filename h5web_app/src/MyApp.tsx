@@ -1,7 +1,7 @@
 import { App, H5GroveProvider } from '@h5web/app';
 
 function MyApp() {
-  const query = new URLSearchParams(window.location.search);
+  const query = new URLSearchParams(globalThis.location.search);
   const file = query.get('file');
   const url = import.meta.env.VITE_H5GROVE_URL as string;
   const port = import.meta.env.VITE_H5GROVE_PORT as string;
