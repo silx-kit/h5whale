@@ -9,9 +9,8 @@
   "packageManager": "pnpm@9.15.9",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "prebuild": "pnpm lint",
-    "build": "tsc && vite build",
+    "start": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "pnpm \"/^lint:/\"",
     "lint:eslint": "eslint --max-warnings=0",
