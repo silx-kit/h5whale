@@ -1,4 +1,6 @@
-import { App, H5GroveProvider } from '@h5web/app';
+import { App, createBasicFetcher, H5GroveProvider } from '@h5web/app';
+
+const fetcher = createBasicFetcher();
 
 function MyApp() {
   const query = new URLSearchParams(globalThis.location.search);
@@ -20,7 +22,7 @@ function MyApp() {
     <H5GroveProvider
       url={port ? `${url}:${port}` : url}
       filepath={file}
-      axiosConfig={{ params: { file } }}
+      fetcher={fetcher}
     >
       <App />
     </H5GroveProvider>
