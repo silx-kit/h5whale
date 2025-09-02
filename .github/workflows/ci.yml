@@ -21,12 +21,12 @@ jobs:
           node-version-file: "h5web_app/package.json"
 
       - name: Install pnpm ⚙️
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
-          version: 9.x
+          version: 10
 
       - name: Restore cache 📌
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/setup-pnpm/node_modules/.bin/store
           key: cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
@@ -54,12 +54,12 @@ jobs:
           node-version-file: "h5web_app/package.json"
 
       - name: Install pnpm ⚙️
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
-          version: 9.x
+          version: 10
 
       - name: Restore cache 📌
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/setup-pnpm/node_modules/.bin/store
           key: cache-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
