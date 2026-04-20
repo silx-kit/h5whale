@@ -4,9 +4,9 @@
   "private": true,
   "engines": {
     "node": "24.x",
-    "pnpm": ">=10.16"
+    "pnpm": ">=10.26"
   },
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.33.0",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -19,19 +19,19 @@
   },
   "dependencies": {
     "@h5web/app": "16.0.1",
-    "normalize.css": "8.0.1",
+    "modern-normalize": "3.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@esrf/eslint-config": "1.6.1",
-    "@types/node": "^24.10.1",
-    "@types/react": "^18.3.26",
+    "@esrf/eslint-config": "2.3.0",
+    "@types/node": "^24.12.2",
+    "@types/react": "^18.3.28",
     "@types/react-dom": "^18.3.7",
-    "@vitejs/plugin-react-swc": "4.2.2",
-    "eslint": "9.38.0",
-    "prettier": "3.6.2",
+    "@vitejs/plugin-react": "6.0.1",
+    "eslint": "9.39.4",
+    "prettier": "3.8.3",
     "typescript": "5.9.3",
-    "vite": "7.2.2"
+    "vite": "8.0.7"
   }
 }
